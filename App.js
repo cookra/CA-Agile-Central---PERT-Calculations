@@ -1,4 +1,3 @@
-//rrr
 Ext.define('LabRallyGrid', {
     extend: 'Rally.app.App',
     name: 'marketpert',
@@ -137,7 +136,7 @@ Ext.define('LabRallyGrid', {
                 return "nbsp" == p1 ? " " : "lt" == p1 ? "<" : ">"
             })
         }
-        var rallyGrid, fields = ["Name", "FormattedID", "Description", "c_AcceptanceTests", "c_AcceptanceCriteria", "c_PERT"];
+        var rallyGrid, fields = ["FormattedID", "Name", "c_PERT"];
         Ext.create("Rally.data.WsapiDataStore", {
             model: "UserStory",
             fetch: fields,
